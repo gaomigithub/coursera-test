@@ -22,13 +22,13 @@ h2 {
     overflow: auto;
 }
 
-.title1 h2 {
+.title1 {
     background-color: #ff9999;
 }
-.title2 h2 {
+.title2 {
     background-color: #ff1a1a;
 }
-.title3 h2 {
+.title3 {
     background-color: #ffcc66;
 }
 
@@ -36,18 +36,20 @@ h2 {
     background-color: #a9a9a9;
     border: 1px solid black;
     margin: 0px 15px 30px 15px; 
+    padding: 0px;
     position: relative;
     height: auto;
 }
 
-p {
+section p {
+    /* position: absolute; */
     padding: 15px;
     padding-top: 40px;
-
+    /* display: block; */
 } 
 
 /* General Responsive Layout */
-.row {
+.container {
     width: 100%;
     margin: 0%;
     padding: 15px;
@@ -55,6 +57,47 @@ p {
 
 /* Computer devices */
 @media (min-width: 992px) {
+    /* [class^="col"] {
+        float: left;
+
+        box-sizing: border-box;
+    }
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+        width: 33.33%;
+    }
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    .col-lg-9 {
+        width: 74.99%;
+    }
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    } */
     .col-lg-4{
       width: 33.33%;
       float: left;
@@ -77,6 +120,6 @@ p {
 /* Mobile devices */
 @media (max-width: 767px) {
     .content {
-      width: 95%;
+      width: default;
     }
 }
